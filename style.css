@@ -157,4 +157,9 @@
         text-align: center;
     }
 
+   .container-header-img{
+    display:none;
+   }
+
+   
 }
