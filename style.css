@@ -58,7 +58,7 @@
  }
 
 .container{
-    margin: 48px calc(20vw - 1.35vw);
+    margin: 48px calc(20vw - 15.35vw);
     padding: 48px 24px 0px;
     border: 0px;
     box-sizing: content-box;
@@ -77,33 +77,40 @@
 .main-header h1{
     font-family: "Ubuntu", serif;
     font-weight: 700;
-    font-size: calc(1.475rem + 2.0vw);
+    font-size: calc(1.7rem + 2.0vw); /*60px; */
+    max-width: 1300px;
     text-align: center;
-    height: auto;
-    margin: 0px 0px 24px;
-    text-align: center;    
+    margin: 30px auto;
 }
+
+.main-header .text{
+    display: flex;  
+    margin: auto;
+    max-width: 500px;
+}
+
 
 .main-header .text p{
     font-family: "Ubuntu", serif;
     font-weight: 10;
-    font-size: calc(1rem + 0.95vw);     /*30px;*/
+    font-style: normal;
+    font-size: calc(1rem + 1.0vw);    /*30px;*/
     /* filter: contrast(100%); */
-    text-align: justify;
-    text-justify: inter-word;
+    justify-content: center;
+    align-items: center;  
     text-align: center;
-    margin: 0px calc(6vw - 0.9vw) 24px;
+    margin: 0px 0px 25px;
 }
 
 
 .container-header-img{
     margin: 0px;
     padding: 0px;
-    height: 100vh;
+    width: auto;
+    height: auto;
 }
 
 .main-header .container-header-img{
-    display: flex;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -126,24 +133,20 @@
         justify-content: space-around; /* Space between img and menu */
         align-items: center; /* Vertical mid */
     }
-    .menu-header ul{
-        display: none;
-    }
-    
 
     .logo-header img{
-        height:60px;
+        height:50px;
         /* justify-content: center;
         align-items: center; */
     }
 
     .menu-header ul li .link{
         font-weight: 430;
-        font-size: 20px;
+        font-size: 17px;
      }
 
 
-    .main-header h1{
+    /* .main-header h1{
         font-size: calc(1.4rem + 2vw);
         margin: 0px 0px 20px;  
     }
@@ -151,15 +154,12 @@
     .main-header .text p{
         font-size: calc(1rem + 0.90vw);
         margin: 0px 0px 20px;
-    }
+    } */
 
     .main-header .container-header-img{
         text-align: center;
     }
 
-   .container-header-img{
-    display:none;
-   }
-
-   
 }
+
+
