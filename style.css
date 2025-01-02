@@ -104,7 +104,10 @@
 }
 
 .main-header .container-header-img{
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
     margin: 0px;
     padding: 0px;
 }
