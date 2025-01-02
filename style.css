@@ -127,6 +127,10 @@
         justify-content: space-around; /* Space between img and menu */
         align-items: center; /* Vertical mid */
     }
+    .menu-header ul{
+        display: none;
+    }
+    
 
     .logo-header img{
         height:60px;
