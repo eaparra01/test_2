@@ -9,6 +9,7 @@
     top: 0;
     left: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around; /* Space between img and menu */
     align-items: center; /* Vertical mid */
     width: 100%;
@@ -19,39 +20,50 @@
     z-index: 100;
 }
 
+/* .logo-header{
+    display: inline-flex;
+} */
+
 .logo-header img{
     height:75px;
-    margin: 0;
-    padding: 0;
-    border: 0;
+    justify-content: center;
+    align-items: center;
 }
+
+.menu-header{
+    display: inline-flex;
+} 
 
 .menu-header ul{
     display: flex;
+    justify-content: space-around; 
+    padding: 0px;
+    margin: 0px;
 }
 
 .menu-header ul li{
-    display: flex;
     list-style-type: none; /* Remove the points */
-    justify-content: space-around;  
     padding: 0px; 
     margin:0 25px;
-    }
+}
 
 .menu-header ul li .link{
     font-family: "Ubuntu", serif;
     font-weight: 450;
-    font-size: 20px;
+    font-size: 23px;
     text-decoration: none;
-
     color: #431f53;
    
     /* border: 1px solid #fff; */
  }
 
 .container{
-    margin: 48px 132px;
-    padding: 48px 24px 0px;   
+    margin: 48px calc(20vw - 1.35vw);
+    padding: 48px 24px 0px;
+    border: 0px;
+    box-sizing: content-box;
+    z-index: 100;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15); 
 }
 
 .main-header{
@@ -65,52 +77,78 @@
 .main-header h1{
     font-family: "Ubuntu", serif;
     font-weight: 700;
-    font-size: 60px;
+    font-size: calc(1.475rem + 2.0vw);
     text-align: center;
-    width: 1272px;
     height: auto;
-    padding: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: 0px 0px 24px;
+    text-align: center;    
 }
+
 .main-header .text p{
     font-family: "Ubuntu", serif;
     font-weight: 10;
-    font-size: 30px;
-    width: 750px;
-    height: auto;
-    display: block;
+    font-size: calc(1rem + 0.95vw);     /*30px;*/
+    /* filter: contrast(100%); */
+    text-align: justify;
+    text-justify: inter-word;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: 0px calc(6vw - 0.9vw) 24px;
 }
-.main-header .header-img{
-    width: 750px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+
+
+.container-header-img{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    height: auto;
+}
+
+.main-header .container-header-img{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.header-image{
+    max-width: 100%;
+    height: auto;
 }
 
 /* .nav-menu-btn{
     display: none;
 }  */
 
-@media  (max-width: 756px){
-/* 
-    .menu-header.responsive{
-        top: 125px;
+@media  (max-width: 860px){
+
+    .nav-header{ 
+        justify-content: space-around; /* Space between img and menu */
+        align-items: center; /* Vertical mid */
     }
-    
+
     .logo-header img{
-        height:70px;
+        height:60px;
+        /* justify-content: center;
+        align-items: center; */
     }
-    .nav-menu ul{
-        flex-direction: column;
+
+    .menu-header ul li .link{
+        font-weight: 430;
+        font-size: 20px;
+     }
+
+
+    .main-header h1{
+        font-size: calc(1.4rem + 2vw);
+        margin: 0px 0px 20px;  
+    }
+
+    .main-header .text p{
+        font-size: calc(1rem + 0.90vw);
+        margin: 0px 0px 20px;
+    }
+
+    .main-header .container-header-img{
         text-align: center;
-        justify-content: space-evenly;
-        padding: 0px;
-        margin: 0px;
-    } */
+    }
+
 }
