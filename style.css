@@ -99,8 +99,7 @@
 .container-header-img{
     margin: 0px;
     padding: 0px;
-    width: auto;
-    height: auto;
+    height: 100vh;
 }
 
 .main-header .container-header-img{
